@@ -6,9 +6,7 @@ class DosesController < ApplicationController
   end
 
   def create
-    dose_attr = dose_params
-    dose_attr[:ingredient_id] = dose_attr[:ingredient_id].to_i
-    @dose = Dose.new(dose_attr)
+    @dose = Dose.new(dose_params)
     @dose.cocktail = @cocktail
     if @dose.save
       redirect_to cocktail_path(@cocktail)
