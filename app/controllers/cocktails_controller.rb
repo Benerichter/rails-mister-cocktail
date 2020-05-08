@@ -20,7 +20,7 @@ class CocktailsController < ApplicationController
   end
 
   def searched
-    @cocktails = Cocktail.where('LOWER(name) LIKE ?', "#{search_params['query'].downcase}%")
+    @cocktails = Cocktail.where('name ILIKE ?', "#{search_params['query']}%")
     if @cocktails.empty?
       render 'searched'
     else
