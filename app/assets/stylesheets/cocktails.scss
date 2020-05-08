@@ -1,3 +1,13 @@
-img {
-  height: 50px;
+$lightgrey: #202020;
+
+.icon-size-color {
+  color: black;
+  font-size: 200px;
+  opacity: 0.2;
+  padding: 8px;
+}
+
+.custom-container {
+  margin: 15vh auto;
+  text-align: center;
 }

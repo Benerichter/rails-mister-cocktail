@@ -1,14 +1,16 @@
-<h1 class="text-center">Cocktails</h1>
-<div class="container">
-  <div class="row">
-  <% @cocktails.each do |e|%>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <%= link_to cocktail_path(e) do%>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-            <%= e.name %>
-          </div>
-      <% end %>
+<div style="padding: 7vh">
+  <%= render 'searchbar' %>
+  <div class="container">
+    <div class="row">
+    <% @cocktails.each do |e|%>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <%= link_to cocktail_path(e) do%>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+              <%= e.name %>
+            </div>
+        <% end %>
+      </div>
+    <% end %>
     </div>
-  <% end %>
   </div>
 </div>

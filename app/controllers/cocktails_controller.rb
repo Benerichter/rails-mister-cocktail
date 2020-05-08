@@ -19,10 +19,23 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def searched
+    @cocktails = Cocktail.where('LOWER(name) LIKE ?', "#{search_params['query'].downcase}%")
+    if @cocktails.empty?
+      render 'searched'
+    else
+      render 'index'
+    end
+  end
+
   private
 
   def cocktail_params
     params.require(:cocktail).permit(:name)
+  end
+
+  def search_params
+    params.require(:search).permit(:query)
   end
 
   def set_cocktail
