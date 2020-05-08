@@ -1,13 +1,13 @@
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon {
-  justify-content: space-between;
+#custom-navbar {
   background-color: transparent;
   transition: 0.5s background-color ease;
 }
 
-.navbar-lewagon-white {
-  background-color: white;
+.custom-list {
+  list-style: none;
+  padding: 8px 16px;
+  a {
+    color: white;
+    font-weight: light;
+  }
 }

@@ -11,10 +11,10 @@ dummy_data_ingredients['drinks'].each do |e|
 end
 puts "Finished. Created #{Ingredient.count} ingredients"
 
-dummy_data_cocktails = ['Martini', 'Manhattan', 'Bloody Mary', 'Margarita', 'Old Fashioned Cocktail', 'Mojito', 'Daiquiri', 'Gin and Tonic', 'Screwdriver', 'Gimlet']
-dummy_data_cocktails.each do |e|
-  cocktail = Cocktail.create(name: e)
-  puts "Created #{cocktail.name}"
-end
+# dummy_data_cocktails = ['Martini', 'Manhattan', 'Bloody Mary', 'Margarita', 'Old Fashioned Cocktail', 'Mojito', 'Daiquiri', 'Gin and Tonic', 'Screwdriver', 'Gimlet']
+# dummy_data_cocktails.each do |e|
+#   cocktail = Cocktail.create(name: e)
+#   puts "Created #{cocktail.name}"
+# end
 
-puts "Finished. Created #{Cocktail.count} cocktails"
+# puts "Finished. Created #{Cocktail.count} cocktails"
