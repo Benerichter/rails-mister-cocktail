@@ -1,0 +1,15 @@
+<nav class="d-flex fixed-top" id="custom-navbar"=>
+  <ul class="list-group list-group-horizontal flex-grow-1">
+    <li class="custom-list" id="custom-navbar">
+      <%= link_to "Home", root_path, id: "white" %>
+    </li>
+    <li class="custom-list" id="custom-navbar">
+      <%= link_to "See all cocktails", cocktails_path, id: "white" %>
+    </li>
+  </ul>
+  <ul class="list-group list-group-horizontal">
+    <li class="custom-list" id="custom-navbar">
+      <%= link_to "Add a Cocktail", new_cocktail_path, id: "white" %>
+    </li>
+  </ul>
+</nav>
