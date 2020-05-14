@@ -8,8 +8,14 @@
 }
 
 .show-banner {
-  height: 50vh;
+  height: 100vh;
   color: #eee;
   text-align: center;
   padding-top: 7vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: contain;
+  background-attachment: fixed;
+  top: 0;
 }
